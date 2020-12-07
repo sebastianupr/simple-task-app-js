@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js App Tasks</title>
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+</head>
+<body>
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center my-3">Task App</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- App -->
+    <section class="container app">
+        <div class="row">
+            <div class="col-sm-5"> <!-- Form -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card py-2">
+                            <div class="card-head">
+                                <h2 class="text-center">Add tasks</h2>
+                            </div>
+                            <div class="card-body">
+                                <div id="message"></div>
+                                <form id="form-task" class="form">
+                                    <div class="form-group">
+                                        <input class="form-control" id="task" type="text" placeholder="Task">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea name="description" id="description" cols="68" rows="5" class="form-control" placeholder="Add description"></textarea>
+                                    </div>
+                                    <div class="form-group" id="saveTask">
+                                        <button class="btn btn-primary btn-block">Save</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-6 col-sm-7 mt-3 m-sm-0"> <!--Tasks list-->
+                <div class="card py-2">
+                    <div class="card-head">
+                        <h2 class="text-center">Your tasks</h2>
+                    </div>
+                    <div id="tasksList">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- JS -->
+    <script src="js/app.js"></script>
+</body>
+</html>
